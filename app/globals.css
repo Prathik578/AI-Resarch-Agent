@@ -41,13 +41,19 @@ body {
 
 button, a, input, select { transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease, box-shadow 120ms ease; }
 .research-shell { min-height: 100vh; display: flex; background: var(--bgColor-default); }
-.research-sidebar { width: 248px; flex: 0 0 248px; min-height: 100vh; display: flex; flex-direction: column; padding: 24px 16px; border-right: 1px solid var(--borderColor-default); background: var(--bgColor-muted); }
-.research-main { width: min(1120px, 100%); margin: 0 auto; padding: 40px 48px 80px; }
-.sidebar-link { width: 100%; justify-content: flex-start; color: var(--fgColor-muted) !important; }
+.research-sidebar { width: 224px; flex: 0 0 224px; min-height: 100vh; display: flex; flex-direction: column; padding: 20px 14px; border-right: 1px solid var(--borderColor-default); background: var(--bgColor-muted); }
+.research-main { width: min(980px, 100%); margin: 0 auto; padding: 32px 36px 72px; }
+.research-main > div > div:first-child h1 { font-size: 32px; letter-spacing: -0.035em; }
+.research-main > div > div:first-child { gap: 6px !important; }
+.sidebar-link { width: 100%; justify-content: flex-start; color: var(--fgColor-muted) !important; border-radius: 6px !important; }
 .sidebar-link-active { color: var(--fgColor-default) !important; background: var(--bgColor-accent-muted) !important; }
-.composer { padding: 24px; border: 1px solid var(--borderColor-default); border-radius: 8px; background: var(--bgColor-muted); box-shadow: 0 8px 24px var(--shadow-small); }
+.composer { padding: 20px; border: 1px solid var(--borderColor-default); border-radius: 8px; background: var(--bgColor-muted); box-shadow: 0 8px 24px var(--shadow-small); }
+.composer h2 { font-size: 20px; letter-spacing: -0.02em; }
+.composer-controls select { min-width: 190px; }
 .session-list { border: 1px solid var(--borderColor-default); border-radius: 8px; overflow: hidden; }
-.session-row { padding: 18px 20px; border-bottom: 1px solid var(--borderColor-muted); }
+.session-row { padding: 16px 18px; border-bottom: 1px solid var(--borderColor-muted); }
+.session-row > div:last-child { flex-shrink: 0; }
+.research-main button[data-component="Button"] { border-radius: 6px; }
 .session-row:last-child { border-bottom: 0; }
 .session-title { color: var(--fgColor-default); font-size: var(--text-body-size-medium); font-weight: 600; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .session-title:hover { color: var(--fgColor-accent); }
